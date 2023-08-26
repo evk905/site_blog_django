@@ -20,6 +20,7 @@ class Post(models.Model):
     date = models.DateTimeField(auto_now_add=True, verbose_name='Дата публикации')
     category = models.ForeignKey(Category, on_delete=models.CASCADE, blank=True, null=True, verbose_name='Категория')
     author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Автор')
+    image = models.ImageField(null=True, blank=True, verbose_name='Фото')
 
     class Meta:
         verbose_name = 'Публикация'

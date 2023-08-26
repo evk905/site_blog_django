@@ -1,0 +1,31 @@
+{% extends "publications/base.html" %}
+{% block content %}
+        <div class="container-fluid">
+            <div class="article-block__img">
+                <img src="https://loremflickr.com/1200/500" alt="image_2" class="horizontal-fill-img">
+            </div>
+        </div>
+        <div class="container">
+            <article class="article-detail">
+                <div class="article-detail__header">
+                    <h1>{{post.name}}</h1>
+                    <div class="article-detail__info">
+                        <div class="author"><b>{{post.author.first_name}} {{post.author.last_name}}</b></div>
+                        <div>{{post.date.date}}</div>
+                    </div>
+                </div>
+                <div class="article-detail__text">
+                    <section>
+                        <p>{{post.text}}
+                        </p>
+
+                    </section>
+
+
+                    <div class="btn-block bottom-fixed">
+                        <button class="btn-up" onclick="window.location.href='#top'"></button>
+                    </div>
+                </div>
+            </article>
+        </div>
+{% endblock content %}
