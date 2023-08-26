@@ -1,0 +1,55 @@
+{% extends "publications/base.html" %}
+{% block content %}
+
+        <div class="container">
+            <h1>Свежее</h1>
+            <div class="responsive horizontal space-between">
+
+                {% for post in fresh %}
+                <article class="article-block vertical">
+                    <div class="article-block__img">
+                        {% if post.image %}
+                        <img src="{{post.image.url}}" alt="" class="horizontal-fill-img br-top-5">
+                        {% else %}
+                        <img src="https://loremflickr.com/500/300" alt="" class="horizontal-fill-img br-top-5">
+                        {% endif %}
+                    </div>
+                    <div class="article-block__text p-15">
+                        <h1>{{post.name}}</h1>
+                        <p>{{post.text|truncatechars:100}}</p>
+                        <div class="article-block__bottom">
+                            <p>{{post.date.date}}</p><a href="{% url 'details' post.id %}" class="article-block__link link-underscore">Читать далее</a>
+                        </div>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+
+            {% for post in posts %}
+            <article class="article-block responsive">
+                <div class="article-block__text">
+                    <h1>{{post.name}}</h1>
+                    <p>{{post.text|truncatechars:100}}</p>
+                    <div class="article-block__bottom">
+                        <p>{{post.date.date}}</p><a class="article-block__link link-underscore" href="{% url 'details' post.id %}">Читать далее</a>
+                    </div>
+
+                </div>
+                <div class="article-block__img">
+                    {% if post.image %}
+                     <img class="vertical-fill-img" src="{{post.image.url}}" alt="long established">
+                    {% else %}
+                    <img class="vertical-fill-img" src="https://loremflickr.com/500/300" alt="long established">
+                    {% endif %}
+                </div>
+
+            </article>
+            {% endfor %}
+
+            
+            <div class="btn-block">
+                <button class="btn">Смотреть еще <i class="icon-down"></i></button>
+            </div>
+        </div>
+
+  {% endblock content %}

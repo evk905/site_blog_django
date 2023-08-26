@@ -16,7 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from publications.views import index, details
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('', index, name='index'),
+    path('publications/<int:post_id>/', details, name='details')
+
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
