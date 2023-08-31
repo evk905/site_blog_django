@@ -5,7 +5,7 @@ from .models import Post
 # Create your views here.
 def index(request):
     """Главная страница"""
-    posts = Post.objects.all().order_by("-date")
+    posts = Post.objects.all()
     fresh = Post.objects.order_by("-date").all()[:3]
     context = {
         'posts': posts,
