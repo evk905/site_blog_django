@@ -2,7 +2,13 @@
 {% block content %}
         <div class="container-fluid">
             <div class="article-block__img">
-                <img src="https://loremflickr.com/1200/500" alt="image_2" class="horizontal-fill-img">
+                {% if post.image %}
+                     <img class="horizontal-fill-img" src="{{post.image.url}}" alt="image_2">
+                    {% else %}
+                    <img class="horizontal-fill-img" src="https://loremflickr.com/500/300" alt="image_2">
+                    {% endif %}
+
+
             </div>
         </div>
         <div class="container">
@@ -16,7 +22,7 @@
                 </div>
                 <div class="article-detail__text">
                     <section>
-                        <p>{{post.text}}
+                        <p>{{ post.text | linebreaks }}
                         </p>
 
                     </section>
