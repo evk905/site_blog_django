@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar">
             <div class="navbar__section">
-                <a class="navbar__brand" href="#">MyBlog</a>
+                <a class="navbar__brand" href="#">Блесни эрудицией</a>
             </div>
             <div class="navbar__section">
                 <div class="search">
@@ -27,7 +27,7 @@
             <div class="navbar__section">
                 <div class="navbar__links">
                     <a href="{% url 'index' %}" class="navbar__link link-underscore">Главная</a>
-                    <a href="#" class="navbar__link link-underscore">Статьи</a>
+                    <a href="{% url 'articles' %}" class="navbar__link link-underscore">Статьи</a>
                     <div class="social-links">
                         <a href="#" class="social-links__link"><img src="{% static 'publications/assets/img/svg/instagram.svg' %}"
                                 alt="Instagram"></a>

@@ -17,13 +17,13 @@ def index(request):
                 search_query = search_query.replace(word, "")
                 hash_tags.append(word[1:])
         search_query = search_query.strip()
-        print(search_query)
+        # print(search_query)
         tags = Tag.objects.filter(name__in=hash_tags)
         posts = Post.objects.all().filter(Q(name__icontains=search_query)|Q(tags__in=tags)).distinct()
     else:
         posts = Post.objects.all().order_by("-date")
 
-    print(posts.query)
+    # print(posts.query)
 
     fresh = Post.objects.order_by("-date").all()[:3]
     context = {
@@ -45,3 +45,12 @@ def details(request, post_id):
     }
 
     return render(request, 'publications/details.html', context=context)
+
+
+def articles(request):
+    posts = Post.objects.all().order_by("-date")
+    print(posts)
+    context = {
+        'posts': posts
+    }
+    return  render(request, 'publications/articles.html', context=context)
