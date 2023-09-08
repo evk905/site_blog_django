@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Tag
 from django.db.models import Q
 from .forms import PostForm
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
@@ -37,6 +38,7 @@ def index(request):
     return render(request, 'publications/index.html', context=context)
 
 
+@login_required
 def post_new(request):
     if request.method == "POST":
         form = PostForm(request.POST)
