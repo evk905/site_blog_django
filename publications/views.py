@@ -1,6 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Tag
 from django.db.models import Q
+from .forms import PostForm
 
 
 # Create your views here.
@@ -19,7 +20,7 @@ def index(request):
         search_query = search_query.strip()
         # print(search_query)
         tags = Tag.objects.filter(name__in=hash_tags)
-        posts = Post.objects.all().filter(Q(name__icontains=search_query)|Q(tags__in=tags)).distinct()
+        posts = Post.objects.all().filter(Q(name__icontains=search_query) | Q(tags__in=tags)).distinct()
     else:
         posts = Post.objects.all().order_by("-date")
 
@@ -36,11 +37,28 @@ def index(request):
     return render(request, 'publications/index.html', context=context)
 
 
+def post_new(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            return redirect('details', pk=post.pk)
+    else:
+        form = PostForm()
+
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'publications/post_edit.html', context=context)
+
+
 def details(request, post_id):
-    # post = Post.objects.get(id=post_id)
     post = get_object_or_404(Post, id=post_id)
     # print(post)
-    context ={
+    context = {
         'post': post
     }
 
@@ -53,4 +71,4 @@ def articles(request):
     context = {
         'posts': posts
     }
-    return  render(request, 'publications/articles.html', context=context)
+    return render(request, 'publications/articles.html', context=context)
