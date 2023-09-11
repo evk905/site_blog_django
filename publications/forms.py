@@ -9,9 +9,8 @@ class PostForm(forms.ModelForm):
             'name',
             'text',
             'category',
-            'author',
             'image',
-            'tags',
+            # 'tags',
         )
 
 # class TagForm(forms.ModelForm):

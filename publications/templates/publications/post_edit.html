@@ -1,10 +1,40 @@
 {% extends 'publications/base.html' %}
 
 {% block content %}
+<div class="container">
     <h1>Новая статья</h1>
-    <form method="POST" class="post-form">{% csrf_token %}
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% for field in form %}
+        <div>
+            <label> {{ field.label }}</label>
+            {{ field }}
+        </div>
+        {% endfor %}
+        <div class="form-wrapper">
+            <label> Теги </label>
+            <select class="form-control" multiple="multiple" name="tags">
+                {% for tag in tags %}
+                <option>{{ tag.name }}</option>
+                {% endfor %}
 
-        {{ form.as_p }}
+            </select>
+        </div>
+        <!--        {{ form.as_p }}-->
         <button type="submit" class="save btn btn-default">Сохранить</button>
     </form>
+</div>
 {% endblock %}
+{% block js %}
+
+<script>
+    $(document).ready(function() {
+  $(".form-control").select2({
+    tags: true,
+    width: "100%",
+    tokenSeparators: [',', ' ']
+})
+});
+
+</script>
+{% endblock js %}
