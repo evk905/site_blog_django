@@ -13,11 +13,5 @@ class PostForm(forms.ModelForm):
             # 'tags',
         )
 
-# class TagForm(forms.ModelForm):
-#     class Meta:
-#         model = Tag
-#         fields = (
-#             'name',
-#         )
-#         # fields = '__all__' если все поля нужны
+
 
