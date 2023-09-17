@@ -1,6 +1,7 @@
 from django.db import models
 from authentication.models import User
-from django.db.models import UniqueConstraint
+
+from .utils import slugify
 
 
 # Create your models here.
@@ -17,24 +18,22 @@ class Category(models.Model):
 
 
 class Tag(models.Model):
-    name = models.CharField(max_length=255, verbose_name='Название тега')
+    name = models.CharField(max_length=255, verbose_name='Название тега', unique=True)
     slug = models.SlugField(unique=True, verbose_name='Url тега')
 
     class Meta:
         verbose_name = 'Тег'
         verbose_name_plural = 'Теги'
 
+    def save(
+        self, *args, **kwargs
+    ):
+        self.slug = slugify(self.name)
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return self.name
 
-class TagsToPosts(models.Model):
-    tag = models.ForeignKey(Tag, on_delete=models.CASCADE, verbose_name='Тег')
-    post = models.ForeignKey('publications.Post', on_delete=models.CASCADE, verbose_name='Публикация')
-
-    class Meta:
-        constraints=[
-            UniqueConstraint(fields=('tag', 'post'), name='unique_post_tag')
-        ]
 
 
 class Post(models.Model):
@@ -47,7 +46,6 @@ class Post(models.Model):
     tags = models.ManyToManyField(
         Tag,
         verbose_name='Теги',
-        through=TagsToPosts,
     )
 
 
