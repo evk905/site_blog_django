@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'debug_toolbar',
     'authentication.apps.AuthenticationConfig',
+    'django_extensions',
     'publications.apps.PublicationsConfig',
 ]
 

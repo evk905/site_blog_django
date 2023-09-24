@@ -16,17 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from publications.views import index, details, articles, post_new
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index, name='index'),
-    path('publications/<int:post_id>/', details, name='details'),
-    path('publications/articles', articles, name='articles'),
-    path('post/new/', post_new, name='post_new'),
-
+    path('', include('publications.urls')),
 ]
 
 if settings.DEBUG:

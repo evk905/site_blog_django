@@ -14,10 +14,10 @@
         <div class="container">
             <article class="article-detail">
                 <div class="article-detail__header">
-                    <h1>{{post.name}}</h1>
+                    <h1>{{ post.name|capfirst }}</h1>
 
                     <div class="article-detail__info">
-                        <div class="author"><b>{{post.author.first_name}} {{post.author.last_name}}</b></div>
+                        <div class="author"><b>{{ post.author.first_name|capfirst }} {{ post.author.last_name|capfirst }}</b></div>
                         <div>{{post.date.date}}</div>
                     </div>
                      <div>
@@ -28,8 +28,9 @@
                 </div>
                 <div class="article-detail__text">
                     <section>
-                        <p>{{ post.text | linebreaks }}
-                        </p>
+                        {% autoescape off %}
+                        <p>{{ post.text | linebreaks }}</p>
+                        {% endautoescape %}
 
                     </section>
 

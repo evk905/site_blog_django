@@ -9,29 +9,22 @@ from django.contrib.auth.decorators import login_required
 def index(request):
     """Главная страница"""
     search_query = request.GET.get('search')
-    original_query = search_query
+    # original_query = search_query
 
     if search_query:
         words = search_query.split()
-        hash_tags = []
-        for word in words:
-            if word[0] == "#":
-                search_query = search_query.replace(word, "")
-                hash_tags.append(word[1:])
-        search_query = search_query.strip()
-        # print(search_query)
-        tags = Tag.objects.filter(name__in=hash_tags)
-        posts = Post.objects.all().filter(Q(name__icontains=search_query) | Q(tags__in=tags)).distinct()
-    else:
-        posts = Post.objects.all().order_by("-date")
 
-    # print(posts.query)
+        posts = Post.objects.filter(name__icontains=search_query).distinct()
+    else:
+        posts = Post.objects.order_by("-date").all()
+
+    print(posts.query)
 
     fresh = Post.objects.order_by("-date").all()[:3]
     context = {
         'posts': posts,
         'fresh': fresh,
-        'original_query': original_query,
+        'search_query': search_query,
 
     }
 
@@ -43,7 +36,7 @@ def post_new(request):
     tags = Tag.objects.all()
     if request.method == "POST":
         form = PostForm(request.POST, request.FILES)
-        print(request.POST)
+        # print(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
