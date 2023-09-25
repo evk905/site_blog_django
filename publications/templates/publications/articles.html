@@ -9,7 +9,7 @@
         <p>{{post.text|truncatechars:100}}</p>
         {% endautoescape %}
         <div class="article-block__bottom">
-            <a class="article-block__link link-underscore" href="{% url 'details' post.id %}">Читать далее</a>
+            <a class="article-block__link link-underscore" href="{{ post.get_absolute_url }}">Читать далее</a>
         </div>
 
     </div>

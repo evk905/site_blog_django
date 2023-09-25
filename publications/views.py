@@ -12,12 +12,12 @@ def index(request):
     if search_query:
         words = search_query.split()
         for word in words:
-            posts = Post.objects.filter(name__icontains=word, is_published=1)
+            posts = Post.published.filter(name__icontains=word)
     else:
-        posts = Post.objects.filter(is_published=1)
+        posts = Post.published.all()
 
 
-    fresh = Post.objects.filter(is_published=1)[:3]
+    fresh = Post.published.all()[:3]
     context = {
         'posts': posts,
         'fresh': fresh,
@@ -63,7 +63,7 @@ def post_new(request):
 
 
 def details(request, post_slug):
-    post = get_object_or_404(Post, slug=post_slug) #добавить filter(is_published=1)
+    post = get_object_or_404(Post, slug=post_slug)
     # print(post)
     context = {
         'post': post
@@ -73,7 +73,7 @@ def details(request, post_slug):
 
 
 def articles(request):
-    posts = Post.objects.all().order_by("-date") #добавить filter(is_published=1)
+    posts = Post.published.all()
     print(posts)
     context = {
         'posts': posts

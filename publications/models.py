@@ -3,7 +3,10 @@ from django.urls import reverse
 
 from authentication.models import User
 
-from .utils import slugify
+
+class PublishedManager(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset().filter(is_published=Post.Status.PUBLISHED)
 
 
 # Create your models here.
@@ -37,8 +40,11 @@ class Tag(models.Model):
         return self.name
 
 
-
 class Post(models.Model):
+    class Status(models.IntegerChoices):
+        DRAFT = 0, 'Черновик'
+        PUBLISHED = 1, 'Опубликовано'
+
     name = models.CharField(max_length=255, verbose_name='Название публикации')
     slug = models.SlugField(max_length=255, unique=True, db_index=True)
     text = models.TextField(verbose_name='Текст публикации')
@@ -50,13 +56,14 @@ class Post(models.Model):
         Tag,
         verbose_name='Теги',
     )
-    is_published = models.BooleanField(default=True)
+    is_published = models.BooleanField(choices=Status.choices, default=Status.DRAFT)
 
-
+    objects = models.Manager()
+    published = PublishedManager()
 
     class Meta:
-        ordering = ['-date'] #порядок сортировки
-        indexes = [models.Index(fields=['-date'])] #сделать поля индексируемыми
+        ordering = ['-date']  # порядок сортировки
+        indexes = [models.Index(fields=['-date'])]  # сделать поля индексируемыми
         verbose_name = 'Публикация'
         verbose_name_plural = 'Публикации'
 
