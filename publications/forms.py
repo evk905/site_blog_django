@@ -14,4 +14,5 @@ class PostForm(forms.ModelForm):
             'text',
             'category',
             'image',
+            'tags'
         )

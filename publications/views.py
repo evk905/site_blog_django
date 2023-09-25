@@ -9,18 +9,15 @@ from django.contrib.auth.decorators import login_required
 def index(request):
     """Главная страница"""
     search_query = request.GET.get('search')
-    # original_query = search_query
-
     if search_query:
         words = search_query.split()
-
-        posts = Post.objects.filter(name__icontains=search_query).distinct()
+        for word in words:
+            posts = Post.objects.filter(name__icontains=word, is_published=1)
     else:
-        posts = Post.objects.order_by("-date").all()
+        posts = Post.objects.filter(is_published=1)
 
-    print(posts.query)
 
-    fresh = Post.objects.order_by("-date").all()[:3]
+    fresh = Post.objects.filter(is_published=1)[:3]
     context = {
         'posts': posts,
         'fresh': fresh,
@@ -65,8 +62,8 @@ def post_new(request):
     return render(request, 'publications/post_edit.html', context=context)
 
 
-def details(request, post_id):
-    post = get_object_or_404(Post, id=post_id)
+def details(request, post_slug):
+    post = get_object_or_404(Post, slug=post_slug) #добавить filter(is_published=1)
     # print(post)
     context = {
         'post': post
@@ -76,7 +73,7 @@ def details(request, post_id):
 
 
 def articles(request):
-    posts = Post.objects.all().order_by("-date")
+    posts = Post.objects.all().order_by("-date") #добавить filter(is_published=1)
     print(posts)
     context = {
         'posts': posts

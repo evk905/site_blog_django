@@ -18,7 +18,7 @@
                         <h1>{{ post.name|capfirst }}</h1>
                         <p>{{ post.text|truncatechars:100 }}</p>
                         <div class="article-block__bottom">
-                            <p>{{post.date.date}}</p><a href="{% url 'details' post.id %}" class="article-block__link link-underscore">Читать далее</a>
+                            <p>{{post.date.date}}</p><a href="{{ post.get_absolute_url }}" class="article-block__link link-underscore">Читать далее</a>
                         </div>
                     </div>
                 </article>
@@ -38,7 +38,7 @@
                     <p>{{ post.text|truncatechars:100 }}</p>
                     {% endautoescape %}
                     <div class="article-block__bottom">
-                        <p>{{post.date.date}}</p><a class="article-block__link link-underscore" href="{% url 'details' post.id %}">Читать далее</a>
+                        <p>{{post.date.date}}</p><a class="article-block__link link-underscore" href="{{post.get_absolute_url}}">Читать далее</a>
                     </div>
 
                 </div>
