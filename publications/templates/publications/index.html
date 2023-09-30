@@ -31,7 +31,7 @@
                     <h1>{{ post.name|capfirst }}</h1>
                     <div>
                         {% for tag in post.tags.all %}
-                        <span class="article-block__tag"> {{tag.name }} </span>
+                        <a href="{{tag.get_absolute_url}}"> <span class="article-block__tag"> {{tag.name }} </span></a>
                         {% endfor %}
                     </div>
                     {% autoescape off %}

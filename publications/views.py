@@ -75,3 +75,12 @@ def articles(request):
         'posts': posts
     }
     return render(request, 'publications/articles.html', context=context)
+
+def show_tag_postlist(request, tag_slug):
+    tag = get_object_or_404(Tag, slug=tag_slug)
+    posts = tag.tags.filter(is_published=Post.Status.PUBLISHED)
+    context = {
+        'posts': posts
+
+    }
+    return render(request, 'publications/articles.html', context=context)

@@ -23,8 +23,8 @@ class Category(models.Model):
 
 
 class Tag(models.Model):
-    name = models.CharField(max_length=255, verbose_name='Название тега', unique=True)
-    slug = models.SlugField(unique=True, verbose_name='Url тега')
+    name = models.CharField(max_length=255, verbose_name='Название тега', unique=True, db_index=True)
+    slug = models.SlugField(unique=True, verbose_name='Url тега', db_index=True)
 
     class Meta:
         verbose_name = 'Тег'
@@ -33,6 +33,9 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('tag', kwargs={'tag_slug': self.slug})
 
 
 class Post(models.Model):
@@ -47,10 +50,7 @@ class Post(models.Model):
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, blank=True, null=True, verbose_name='Категория')
     author = models.ForeignKey(User, on_delete=models.DO_NOTHING, verbose_name='Автор')
     image = models.ImageField(null=True, blank=True, verbose_name='Фото')
-    tags = models.ManyToManyField(
-        Tag,
-        verbose_name='Теги',
-    )
+    tags = models.ManyToManyField(Tag, verbose_name='Теги', blank=True, related_name='tags')
     is_published = models.BooleanField(choices=Status.choices, default=Status.DRAFT)
 
     objects = models.Manager()
