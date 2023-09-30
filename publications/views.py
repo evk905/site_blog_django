@@ -1,6 +1,9 @@
+from functools import reduce
+
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Tag
 from django.db.models import Q
+from operator import or_
 from .forms import PostForm
 from django.contrib.auth.decorators import login_required
 
@@ -11,19 +14,12 @@ def index(request):
     search_query = request.GET.get('search')
     if search_query:
         words = search_query.split()
-        for word in words:
-            posts = Post.published.filter(name__icontains=word)
+        posts = Post.published.filter(reduce(or_, [Q(name__icontains=w) for w in words]))
     else:
         posts = Post.published.all()
 
-
     fresh = Post.published.all()[:3]
-    context = {
-        'posts': posts,
-        'fresh': fresh,
-        'search_query': search_query,
-
-    }
+    context = dict(posts=posts, fresh=fresh, search_query=search_query)
 
     return render(request, 'publications/index.html', context=context)
 

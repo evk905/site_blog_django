@@ -11,8 +11,8 @@ class PublishedManager(models.Manager):
 
 # Create your models here.
 class Category(models.Model):
-    name = models.CharField(max_length=255, verbose_name='Название категории')
-    slug = models.SlugField(unique=True, verbose_name='Url категории')
+    name = models.CharField(max_length=100, db_index=True, verbose_name='Название категории')
+    slug = models.SlugField(max_length=255, unique=True, db_index=True, verbose_name='Url категории')
 
     class Meta:
         verbose_name = 'Категория'
@@ -30,11 +30,6 @@ class Tag(models.Model):
         verbose_name = 'Тег'
         verbose_name_plural = 'Теги'
 
-    # def save(
-    #     self, *args, **kwargs
-    # ):
-    #     self.slug = slugify(self.name)
-    #     super().save(*args, **kwargs)
 
     def __str__(self):
         return self.name
@@ -49,8 +44,8 @@ class Post(models.Model):
     slug = models.SlugField(max_length=255, unique=True, db_index=True)
     text = models.TextField(verbose_name='Текст публикации')
     date = models.DateTimeField(auto_now_add=True, verbose_name='Дата публикации')
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, blank=True, null=True, verbose_name='Категория')
-    author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Автор')
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL, blank=True, null=True, verbose_name='Категория')
+    author = models.ForeignKey(User, on_delete=models.DO_NOTHING, verbose_name='Автор')
     image = models.ImageField(null=True, blank=True, verbose_name='Фото')
     tags = models.ManyToManyField(
         Tag,
