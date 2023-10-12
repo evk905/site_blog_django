@@ -1,7 +1,7 @@
 from functools import reduce
 
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Post, Tag
+from .models import Post, Tag, Category
 from django.db.models import Q
 from operator import or_
 from .forms import PostForm
@@ -14,9 +14,9 @@ def index(request):
     search_query = request.GET.get('search')
     if search_query:
         words = search_query.split()
-        posts = Post.published.filter(reduce(or_, [Q(name__icontains=w) for w in words]))
+        posts = Post.published.filter(reduce(or_, [Q(name__icontains=w) for w in words])).prefetch_related('tags')
     else:
-        posts = Post.published.all()
+        posts = Post.published.all().prefetch_related('tags')
 
     fresh = Post.published.all()[:3]
     context = dict(posts=posts, fresh=fresh, search_query=search_query)
@@ -59,7 +59,7 @@ def post_new(request):
 
 
 def details(request, post_slug):
-    post = get_object_or_404(Post, slug=post_slug)
+    post = get_object_or_404(Post.objects.select_related('author'), slug=post_slug)
     # print(post)
     context = {
         'post': post
@@ -69,8 +69,8 @@ def details(request, post_slug):
 
 
 def articles(request):
-    posts = Post.published.all()
-    print(posts)
+    posts = Post.published.all().prefetch_related('tags')
+    # print(posts)
     context = {
         'posts': posts
     }
@@ -84,3 +84,14 @@ def show_tag_postlist(request, tag_slug):
 
     }
     return render(request, 'publications/articles.html', context=context)
+
+def show_category(request, cat_slug):
+    category = get_object_or_404(Category, slug=cat_slug)
+    posts = Post.published.filter(category_id=category.pk)
+
+    data = {
+        'title': category.name,
+        'posts': posts,
+        'cat_selected': category.pk,
+    }
+    return render(request, 'publications/index.html', context=data)
