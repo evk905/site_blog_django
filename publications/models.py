@@ -54,7 +54,7 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.DO_NOTHING, verbose_name='Автор')
     image = models.ImageField(null=True, blank=True, verbose_name='Фото')
     tags = models.ManyToManyField(Tag, verbose_name='Теги', blank=True, related_name='tags')
-    is_published = models.BooleanField(choices=Status.choices, default=Status.DRAFT)
+    is_published = models.BooleanField(choices=tuple(map(lambda x: (bool(x[0]), x[1]), Status.choices)), verbose_name='Статус', default=Status.DRAFT)
 
     objects = models.Manager()
     published = PublishedManager()
