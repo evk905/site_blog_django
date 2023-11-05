@@ -6,12 +6,14 @@ from publications.models import Category, Post, Tag
 class PostAdmin(admin.ModelAdmin):
     list_filter = ("category", "author")
     search_fields = ('name', 'text')
-    list_display = ('name', 'category', 'author', 'date', 'is_published', 'brief_info')
+    list_display = ('name', 'category', 'author', 'date', 'is_published', 'brief_info', 'slug')
     list_display_links = ('name', )
     ordering = ['-date', 'name']
     list_editable = ('is_published', 'category')
     list_per_page = 10
     actions = ['set_published', 'set_draft']
+    prepopulated_fields = {"slug": ("name",)}
+    filter_horizontal = ['tags']
 
     @admin.display(description="Краткое описание", ordering='text')
     def brief_info(self, post: Post):
@@ -30,8 +32,10 @@ class PostAdmin(admin.ModelAdmin):
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name')
+    list_display = ('id', 'name', 'slug')
     list_display_links = ('id', 'name')
+    prepopulated_fields = {"slug": ("name",)}
+
 
 # admin.site.register(Category)
 # admin.site.register(Post, PostAdmin)
@@ -39,5 +43,6 @@ class CategoryAdmin(admin.ModelAdmin):
 @admin.register(Tag)
 class TagAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'slug')
+    prepopulated_fields = {"slug": ("name",)}
     list_display_links = ('id', 'name')
     list_per_page = 10

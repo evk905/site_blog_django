@@ -1,7 +1,6 @@
 {% if tags %}
 <div>
     <p>Теги:</p>
-
         {% for tag in tags %}
        <a href="{{tag.get_absolute_url}}"><span class="article-block__tag"> {{tag.name }}</span></a>
         {% endfor %}

@@ -47,7 +47,7 @@ class Post(models.Model):
         PUBLISHED = 1, 'Опубликовано'
 
     name = models.CharField(max_length=255, verbose_name='Название публикации')
-    slug = models.SlugField(max_length=255, unique=True, db_index=True)
+    slug = models.SlugField(max_length=255, unique=True, db_index=True, verbose_name='Слаг')
     text = models.TextField(verbose_name='Текст публикации')
     date = models.DateTimeField(auto_now_add=True, verbose_name='Дата публикации')
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, blank=True, null=True, related_name='posts', verbose_name='Категория')
