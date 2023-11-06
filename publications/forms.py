@@ -4,7 +4,8 @@ from .models import Post, Tag, Category
 
 class PostForm(forms.ModelForm):
     category = forms.ModelChoiceField(queryset=Category.objects.all(), empty_label="Категория не выбрана",
-                                      label="Категории")
+                                      label="Категория")
+    tags = forms.ModelMultipleChoiceField(queryset=Tag.objects.all(), label="Теги")
 
 
     class Meta:
@@ -15,5 +16,7 @@ class PostForm(forms.ModelForm):
             'text',
             'category',
             'image',
+            'is_published',
+            'tags',
 
         )

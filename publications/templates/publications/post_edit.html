@@ -5,36 +5,30 @@
     <h1>Новая статья</h1>
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
-        {% for field in form %}
-        <div>
-            <label> {{ field.label }}</label>
-            {{ field }}
-        </div>
-        {% endfor %}
-        <div class="form-wrapper">
-            <label> Теги </label>
-            <select class="form-control" multiple="multiple" name="tags">
-                {% for tag in tags %}
-                <option>{{ tag.name }}</option>
-                {% endfor %}
+        <table>
 
-            </select>
-        </div>
-        <!--        {{ form.as_p }}-->
+<!--        {% for field in form %}-->
+<!--        <div>-->
+<!--            <label> {{ field.label }}</label>-->
+<!--            {{ field }}-->
+<!--        </div>-->
+<!--        {% endfor %}-->
+<!--        <div class="form-wrapper">-->
+<!--            <label> Теги </label>-->
+<!--            <select class="form-control" multiple="multiple" name="tags">-->
+<!--                {% for tag in tags %}-->
+<!--                <option>{{ tag.name }}</option>-->
+<!--                {% endfor %}-->
+
+<!--            </select>-->
+<!--        </div>-->
+                {{ form.as_table}}
+            </table>
         <button type="submit" class="save btn btn-default">Сохранить</button>
     </form>
 </div>
 {% endblock %}
 {% block js %}
 
-<!--<script>-->
-<!--    $(document).ready(function() {-->
-<!--  $(".form-control").select2({-->
-<!--    tags: true,-->
-<!--    width: "100%",-->
-<!--    tokenSeparators: [',', ' ']-->
-<!--})-->
-<!--});-->
 
-<!--</script>-->
 {% endblock js %}
