@@ -554,3 +554,8 @@ ul.tags-list li a {
 	font-size: 16px;
 	border: 1px solid #aaa;
 }
+
+.form-input {
+    width: 300px;
+    font-size: 16px;
+}
