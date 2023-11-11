@@ -4,6 +4,7 @@ from django.urls import reverse
 from authentication.models import User
 
 
+
 class PublishedManager(models.Manager):
     def get_queryset(self):
         return super().get_queryset().filter(is_published=Post.Status.PUBLISHED)
@@ -27,7 +28,7 @@ class Category(models.Model):
 
 class Tag(models.Model):
     name = models.CharField(max_length=255, verbose_name='Название тега', unique=True, db_index=True)
-    slug = models.SlugField(unique=True, verbose_name='Url тега', db_index=True)
+    slug = models.SlugField(max_length=300, unique=True, verbose_name='Url тега', db_index=True)
 
     class Meta:
         verbose_name = 'Тег'
@@ -47,7 +48,7 @@ class Post(models.Model):
         PUBLISHED = 1, 'Опубликовано'
 
     name = models.CharField(max_length=255, verbose_name='Название публикации')
-    slug = models.SlugField(max_length=255, unique=True, db_index=True, verbose_name='Слаг')
+    slug = models.SlugField(max_length=300, unique=True, db_index=True, verbose_name='Слаг')
     text = models.TextField(verbose_name='Текст публикации')
     date = models.DateTimeField(auto_now_add=True, verbose_name='Дата публикации')
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, blank=True, null=True, related_name='posts', verbose_name='Категория')

@@ -7,6 +7,8 @@ from operator import or_
 from .forms import PostForm
 from django.contrib.auth.decorators import login_required
 
+from .utils import slugify
+
 
 # Create your views here.
 def index(request):
@@ -32,6 +34,8 @@ def post_new(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
+            name = form.cleaned_data.get('name')
+            post.slug = slugify(name)
             post.save()
             form.save_m2m()
 

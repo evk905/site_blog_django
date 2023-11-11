@@ -11,3 +11,5 @@ def slugify(s):
     Overriding django slugify that allows to use russian words as well.
     """
     return django_slugify(''.join(alphabet.get(w, w) for w in s.lower()))
+
+

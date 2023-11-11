@@ -1,0 +1,1744 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-09-11T20:26:53.706Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Здоровье и спорт",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-09-11T20:27:05.654Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Наука и техника",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-09-11T20:27:15.292Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Гнездово",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-09-11T20:28:21.431Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Здоровье и спорт",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-09-11T20:28:29.307Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Космос",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-09-11T20:28:44.731Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Наука и техника",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-09-17T19:43:55.593Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "11",
+    "object_repr": "ghgh",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-09-17T19:43:55.596Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "fhgdfh",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-09-17T19:43:55.598Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "ghhjsd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-09-17T19:43:55.600Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "Наука и техника",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-09-17T19:43:55.602Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "Post",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-09-17T19:43:55.604Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "Проверка",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-09-17T19:43:55.606Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Проверка",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-09-17T19:43:55.607Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Сталинские высотки",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-09-17T19:43:55.609Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Папоротник",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-09-17T19:43:55.612Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Леонардо да Винчи",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-09-17T19:43:55.614Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "New",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-09-17T19:44:10.103Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "run",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2023-09-17T19:44:10.105Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Гнездово",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2023-09-17T19:44:10.107Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Наука и техника",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2023-09-17T19:44:10.109Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Здоровье и спорт",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2023-09-17T19:45:45.377Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "mariia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2023-09-17T19:45:52.808Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "mariia",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2023-09-17T19:48:32.297Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "mariia",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2023-09-17T19:49:15.673Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "mariia",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2023-09-17T20:04:01.646Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Флора и фауна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2023-09-17T20:04:50.451Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Папоротник",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2023-09-17T20:05:06.392Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "Папоротник",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2023-09-17T20:05:17.660Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Папоротник",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2023-09-17T20:10:37.507Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Страны и города",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2023-09-17T20:11:12.429Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Гнездово",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2023-09-17T20:12:00.517Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "13",
+    "object_repr": "Гнездово",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2023-09-17T20:20:56.263Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "1",
+    "object_repr": "evk905",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2023-09-17T20:21:16.200Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "1",
+    "object_repr": "evk905",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2023-09-17T20:24:32.635Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "13",
+    "object_repr": "Гнездово",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u0433\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2023-09-17T20:27:06.173Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Леонардо да Винчи",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2023-09-17T20:27:34.486Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Парашют",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2023-09-17T20:27:39.945Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "14",
+    "object_repr": "Парашют Леонардо да Винчи",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2023-09-17T20:30:25.832Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Нибиру",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2023-09-17T20:30:48.349Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Планета",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2023-09-17T20:30:51.079Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "15",
+    "object_repr": "Тайна планеты Нибиру",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2023-09-17T20:41:50.788Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "Здоровье",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2023-09-17T20:42:13.474Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "Витамины",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2023-09-17T20:42:15.880Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "16",
+    "object_repr": "Витамин Д, кальций и движение",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2023-09-17T20:47:56.182Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Юмор и позитив",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2023-09-17T20:50:25.404Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "Юмор",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2023-09-17T20:50:37.893Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "Ломоносов",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2023-09-17T20:50:41.179Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "17",
+    "object_repr": "Юмор от Ломоносова Михаила Васильевича",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u0433\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2023-09-22T16:42:18.557Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "17",
+    "object_repr": "Юмор от Ломоносова Михаила Васильевича",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u043a\\u0441\\u0442 \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2023-09-22T16:43:05.902Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "17",
+    "object_repr": "Юмор от Ломоносова Михаила Васильевича",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u043a\\u0441\\u0442 \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2023-10-12T15:03:35.091Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "15",
+    "object_repr": "Тайна планеты Нибиру",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u0433\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2023-11-05T19:24:27.105Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "19",
+    "object_repr": "новая в форме",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2023-11-05T20:22:38.305Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "21",
+    "object_repr": "hello",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2023-11-05T20:22:38.306Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "19",
+    "object_repr": "новая в форме",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2023-11-05T22:55:21.090Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "Загадки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2023-11-05T22:56:46.533Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "22",
+    "object_repr": "Загадки Сталинских высоток в Москве",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2023-11-05T22:56:46.534Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "21",
+    "object_repr": "hello",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2023-11-05T22:57:34.555Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "22",
+    "object_repr": "Загадки Сталинских высоток в Москве",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2023-11-05T23:00:23.130Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "22",
+    "object_repr": "Загадки Сталинских высоток в Москве",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2023-11-06T11:24:11.303Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "24",
+    "object_repr": "Загадки Z",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2023-11-06T11:24:11.305Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "23",
+    "object_repr": "планета Z",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2023-11-06T21:48:22.339Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "25",
+    "object_repr": "New Post",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2023-11-06T22:00:25.121Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "Спорт",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Url \\u0442\\u0435\\u0433\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2023-11-08T17:56:34.819Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "26",
+    "object_repr": "новый пост еще",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2023-11-08T18:01:54.218Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "26",
+    "object_repr": "новый пост еще",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2023-11-08T18:02:32.205Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "28",
+    "object_repr": "Попытка 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 6,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 6,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 6,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 6,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Категория",
+    "content_type": 7,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Категория",
+    "content_type": 7,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Категория",
+    "content_type": 7,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Категория",
+    "content_type": 7,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Тег",
+    "content_type": 8,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Тег",
+    "content_type": 8,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Тег",
+    "content_type": 8,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Тег",
+    "content_type": 8,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Публикация",
+    "content_type": 9,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Публикация",
+    "content_type": 9,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Публикация",
+    "content_type": 9,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Публикация",
+    "content_type": 9,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "authentication",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "publications",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "publications",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "publications",
+    "model": "post"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "iej4m8dymz09xpt4pk7un75ii5bqx15h",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSGdAdri0r3fQGYYkKqBpI-V8d-1SRe6veec-1KBtrWEbUlzmESdFajT78YUH6nuQO5Ub03HVtd5Yr0r-qCLvjZJz8vh_h0UWsq3TtFbZxJS4pz7rkewIw4xC9rBdWCdEFv2ACQOwXAHgtF7GdF7NujU-wPh1Tdk:1qhyGG:MpBaXFZbqxKGJSX7ptoqypMoCoT4jd2oBZbiVBezd-M",
+    "expire_date": "2023-10-01T20:20:56.270Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "l5w1o9gh0sy6dtdn11wwnu0smhrh0gz8",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSGdAdri0r3fQGYYkKqBpI-V8d-1SRe6veec-1KBtrWEbUlzmESdFajT78YUH6nuQO5Ub03HVtd5Yr0r-qCLvjZJz8vh_h0UWsq3TtFbZxJS4pz7rkewIw4xC9rBdWCdEFv2ACQOwXAHgtF7GdF7NujU-wPh1Tdk:1qqxDG:6Te4LPJXK0z6CttJvPTrjoKgtnolcZ-0H0RiPT07v4Q",
+    "expire_date": "2023-10-26T15:02:58.153Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "oj8xhs8hwxzav9btlt9i6z2nau8m8cyl",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSGdAdri0r3fQGYYkKqBpI-V8d-1SRe6veec-1KBtrWEbUlzmESdFajT78YUH6nuQO5Ub03HVtd5Yr0r-qCLvjZJz8vh_h0UWsq3TtFbZxJS4pz7rkewIw4xC9rBdWCdEFv2ACQOwXAHgtF7GdF7NujU-wPh1Tdk:1qzLZp:q6Msp5FO_AVTk7a85cdsfIS5h59MJ81yF7wAE7f2D-E",
+    "expire_date": "2023-11-18T18:40:57.561Z"
+  }
+},
+{
+  "model": "authentication.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$xH7Pwlsn12cOs33Lnnarss$39R5L/1TEfwD/M3+gUenwyhtOt3qe/+ek+85od3Lh6Q=",
+    "last_login": "2023-11-04T18:40:57.558Z",
+    "is_superuser": true,
+    "username": "evk905",
+    "first_name": "Екатерина",
+    "last_name": "Коваленко",
+    "email": "evk_905@inbox.ru",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-09-11T20:25:40Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authentication.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$Jkixh1IA1oOLnFYgz5VgHh$VslhLlwpkRTCPOwbBVZsSk4wcAplf4BB05B2AAgYQ18=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mariia",
+    "first_name": "Мария",
+    "last_name": "Коваленко",
+    "email": "ekater_kovalenko@mail.ru",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-09-17T19:45:45Z",
+    "groups": [],
+    "user_permissions": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10,
+      11,
+      12,
+      5,
+      6,
+      7,
+      8,
+      21,
+      22,
+      23,
+      24,
+      13,
+      14,
+      15,
+      16,
+      25,
+      26,
+      27,
+      28,
+      33,
+      34,
+      35,
+      36,
+      29,
+      30,
+      31,
+      32,
+      17,
+      18,
+      19,
+      20
+    ]
+  }
+},
+{
+  "model": "publications.category",
+  "pk": 1,
+  "fields": {
+    "name": "Здоровье и спорт",
+    "slug": "health_and_sport"
+  }
+},
+{
+  "model": "publications.category",
+  "pk": 2,
+  "fields": {
+    "name": "Космос",
+    "slug": "cosmos"
+  }
+},
+{
+  "model": "publications.category",
+  "pk": 3,
+  "fields": {
+    "name": "Наука и техника",
+    "slug": "science_and_technology"
+  }
+},
+{
+  "model": "publications.category",
+  "pk": 4,
+  "fields": {
+    "name": "Флора и фауна",
+    "slug": "flora_and_fauna"
+  }
+},
+{
+  "model": "publications.category",
+  "pk": 5,
+  "fields": {
+    "name": "Страны и города",
+    "slug": "countries_and_cities"
+  }
+},
+{
+  "model": "publications.category",
+  "pk": 6,
+  "fields": {
+    "name": "Юмор и позитив",
+    "slug": "humor_and_positivity"
+  }
+},
+{
+  "model": "publications.tag",
+  "pk": 5,
+  "fields": {
+    "name": "Папоротник",
+    "slug": "paporotnik"
+  }
+},
+{
+  "model": "publications.tag",
+  "pk": 6,
+  "fields": {
+    "name": "Гнездово",
+    "slug": "gnezdovo"
+  }
+},
+{
+  "model": "publications.tag",
+  "pk": 7,
+  "fields": {
+    "name": "Леонардо да Винчи",
+    "slug": "leonardo-da-vinchi"
+  }
+},
+{
+  "model": "publications.tag",
+  "pk": 8,
+  "fields": {
+    "name": "Парашют",
+    "slug": "parashyut"
+  }
+},
+{
+  "model": "publications.tag",
+  "pk": 9,
+  "fields": {
+    "name": "Нибиру",
+    "slug": "nibiru"
+  }
+},
+{
+  "model": "publications.tag",
+  "pk": 10,
+  "fields": {
+    "name": "Планета",
+    "slug": "planeta"
+  }
+},
+{
+  "model": "publications.tag",
+  "pk": 11,
+  "fields": {
+    "name": "Здоровье",
+    "slug": "zdorove"
+  }
+},
+{
+  "model": "publications.tag",
+  "pk": 12,
+  "fields": {
+    "name": "Витамины",
+    "slug": "vitamini"
+  }
+},
+{
+  "model": "publications.tag",
+  "pk": 13,
+  "fields": {
+    "name": "Юмор",
+    "slug": "yumor"
+  }
+},
+{
+  "model": "publications.tag",
+  "pk": 14,
+  "fields": {
+    "name": "Ломоносов",
+    "slug": "lomonosov"
+  }
+},
+{
+  "model": "publications.tag",
+  "pk": 15,
+  "fields": {
+    "name": "Загадки",
+    "slug": "zagadki"
+  }
+},
+{
+  "model": "publications.tag",
+  "pk": 16,
+  "fields": {
+    "name": "Спорт",
+    "slug": "sport"
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 12,
+  "fields": {
+    "name": "Папоротник",
+    "slug": "paporotnik",
+    "text": "Папоротники являются одной из самых древних групп растений на Земле. Они существуют уже более 300 миллионов лет и появились задолго до появления цветковых растений.\r\n\r\nСуществует более 12 000 известных видов папоротников, которые распространены по всему миру, от тропиков до арктических регионов.\r\n\r\nПапоротники размножаются с помощью спор, которые образуются на их листьях. Эти споры очень маленькие и легкие, и могут быть перенесены ветром на большие расстояния.\r\n\r\nНекоторые виды папоротников используются в традиционной медицине. Например, род Polypodium используется для лечения расстройств пищеварительной системы и кожных заболеваний.\r\n\r\nБольшинство папоротников предпочитают тенистые места и вырастают на влажной почве. Они развиваются в густых лесах и защищаются от прямого солнечного света с помощью своих больших листьев.\r\n\r\nПапоротники играют важную роль в экосистемах. Они помогают сохранять влажность почвы, предотвращают эрозию и служат убежищем для многих животных, таких как жабы, моллюски и насекомые.\r\n\r\nВ разных культурах папоротник имеет символическое значение. Например, в некоторых мифологиях он ассоциируется с волшебством и счастьем, а в Кельтской традиции считается символом роста и преображения.\r\n\r\nМногие виды папоротников также широко используются в ландшафтном дизайне и декоративном садоводстве. Их элегантные листья и способность расти в тени делают их популярным выбором для создания уютных и зеленых уголков в саду.\r\n\r\nПапоротники являются удивительной группой растений, которые привлекают внимание своей красотой и архаичностью. Они являются важным компонентом биологического разнообразия и имеют множество интересных особенностей.",
+    "date": "2023-09-17T20:05:06.390Z",
+    "category": 4,
+    "author": 2,
+    "image": "paporotnikfin_TQaSSLg.png",
+    "is_published": true,
+    "tags": [
+      5
+    ]
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 13,
+  "fields": {
+    "name": "Гнездово",
+    "slug": "gnezdovo",
+    "text": "Гнездово - это древнее археологическое место, расположенное в Смоленской области России. Вот несколько интересных фактов о Гнездово:\r\n\r\nГнездово считается одним из древнейших археологических комплексов в Европе. Он был заселен около 5-6 тысяч лет назад, в эпоху энеолита (медного века).\r\n\r\nВ Гнездово были найдены обширные археологические находки, включая целые дома, оружие, украшения, керамику и другие предметы. Они были важным источником информации о жизни и культуре древних обитателей этого поселения.\r\n\r\nГнездово известно своими уникальными деревянными зданиями. Они были построены в технике, называемой \"западноевропейский каркасный дом с глинобитными стенами\", и имели необычную архитектуру с расширяющимися к верху стенами.\r\n\r\nГнездово представляет собой важный археологический комплекс, который связан с религиозными и обрядовыми практиками древних обитателей. Здесь были обнаружены следы культовых сооружений, таких как круговые постройки и обелиски.\r\n\r\nНайденные предметы в Гнездово свидетельствуют о том, что древние обитатели вели активные торговые и культурные контакты с другими регионами Европы и даже с Востоком.\r\n\r\nГнездово имеет большое значение для исследований и понимания древних цивилизаций. Он помогает ученым изучать социальные, экономические и религиозные аспекты жизни древних обществ.\r\n\r\nСегодня Гнездово является археологическим заповедником и музеем, который привлекает туристов и исследователей со всего мира. Здесь можно увидеть оригинальные находки, посетить выставки и узнать больше о древней истории этого места.",
+    "date": "2023-09-17T20:12:00.514Z",
+    "category": 5,
+    "author": 1,
+    "image": "gnezdovof_lXIyiw9.png",
+    "is_published": true,
+    "tags": [
+      6
+    ]
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 14,
+  "fields": {
+    "name": "Парашют Леонардо да Винчи",
+    "slug": "loenardo-da-vinci",
+    "text": "Леонардо да Винчи действительно изобрел концепцию парашюта, представив ее в своих заметках и рисунках. Его идея заключалась в создании устройства, позволяющего человеку безопасно спускаться с высоты.\r\n\r\nПарашют Леонардо был основан на принципе сопротивления воздуха. Он предложил использовать широкую конструкцию из каркаса, покрытого тканью, которая при развертывании создавала бы большую площадь, чтобы замедлить падение. Он также предложил использовать ремни для крепления парашюта к телу человека.\r\n\r\nОднако, несмотря на то, что Леонардо создал концепцию парашюта, его изобретение так и осталось на бумаге. Нет доказательств того, что сам Леонардо или кто-либо другой в его время реализовал и испытал его идею на практике.\r\n\r\nИсторический прорыв в развитии парашюта был достигнут в XVIII веке, когда французский изобретатель Жан-Пьер Бланшар создал первый работающий парашют и успешно спускался с небольших высот. Именно после этого момента парашюты стали активно применяться как средство спасения и военного использования.\r\n\r\nТаким образом, Леонардо да Винчи сыграл важную роль в развитии и предвосхищении идеи парашюта, но конечное воплощение его изобретения произошло только в более поздние времена.",
+    "date": "2023-09-17T20:27:39.943Z",
+    "category": 3,
+    "author": 2,
+    "image": "leofin_CxNiH94.png",
+    "is_published": true,
+    "tags": [
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 15,
+  "fields": {
+    "name": "Тайна планеты Нибиру",
+    "slug": "nibiru",
+    "text": "Планета Нибиру является частью мифологической концепции, которая произошла из работы автора Захарии Ситчина. В его книгах он предлагает идею, что Нибиру - это девятая планета нашей солнечной системы, имеющая орбиту, расположенную за орбитой Плутона.\r\n\r\nСогласно теории Ситчина, на планете Нибиру существует развитая внеземная цивилизация, называемая \"аннунаки\". Он утверждает, что эти инопланетные существа посетили Землю в далеком прошлом и влияли на развитие человечества, а также играли роль в формировании религиозных и мифологических представлений различных культур.\r\n\r\nОднако важно отметить, что концепция Нибиру и аннунаки не имеют научного подтверждения и не соответствуют современным открытиям в астрономии и археологии. Нибиру не признана астрономическим сообществом, и идея аннунаки не подтверждена археологическими доказательствами или историческими источниками.\r\n\r\nБольшинство ученых и астрономов считают концепцию Нибиру и аннунаки псевдонаучными и несостоятельными. Они рассматривают их как часть мифологии и фантастической литературы, а не как факты, основанные на научных исследованиях.\r\n\r\nТаким образом, планета Нибиру и связанные с ней идеи остаются в рамках мифологии и фантазийного мира, не имеющего научного обоснования.",
+    "date": "2023-09-17T20:30:51.076Z",
+    "category": 2,
+    "author": 1,
+    "image": "nibirufin_AVhAs99.png",
+    "is_published": true,
+    "tags": [
+      9
+    ]
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 16,
+  "fields": {
+    "name": "Витамин Д, кальций и движение",
+    "slug": "vitamins",
+    "text": "Кальций является одним из основных минералов, необходимых для поддержания здоровья костей и зубов. Он является строительным материалом для костной ткани и участвует в процессе их роста и регенерации. Кроме того, кальций играет важную роль в мышечных сокращениях, нервной системе и кроветворении.\r\nОсновными источниками кальция являются молочные продукты, такие как молоко, йогурт и сыр. Овощи, такие как брокколи и шпинат, также содержат значительное количество кальция. \r\nОднако эффективное усвоение кальция требует наличия витамина D и регулярной физической активности. \r\nВитамин D  помогает кишечнику абсорбировать кальций из пищи и влияет на регуляцию уровня кальция в крови. \r\nВитамин Д также имеет прямое воздействие на иммунную систему, поддерживая ее нормальное функционирование. Он помогает бороться с воспалительными процессами в организме, улучшает регенерацию тканей и способствует заживлению ран. Более того, витамин Д играет важную роль в поддержании нормального уровня серотонина в мозге, что способствует хорошему настроению и снижению риска развития депрессии.\r\nГлавным источником витамина Д является солнечный свет. Когда ультрафиолетовые лучи попадают на кожу, она начинает синтезировать этот витамин. Однако, в местах с недостаточным солнечным светом или в зимний период, получение достаточного количества витамина D может быть сложным. Поэтому рекомендуется употребление пищевых продуктов, богатых витамином Д, таких как рыбий жир, молоко, яйца и форель.\r\nНе забывайте о важности консультации с врачом перед началом приема каких-либо добавок витамина D или изменения режима питания. \r\nОднако, чтобы эффективно использовать кальций, необходимо также обратить внимание на физическую активность. Регулярные упражнения, особенно те, которые включают нагрузку на кости, способствуют укреплению костной ткани и увеличению ее плотности. Физическая активность стимулирует клетки, ответственные за образование новой костной ткани, и улучшает общую структуру костей.\r\nКроме того, физическая активность способствует улучшению равновесия и координации, что в свою очередь снижает риск падений и переломов.\r\n Разнообразные виды физической активности, такие как ходьба, танцы, плавание, аэробика и силовые тренировки, могут быть полезны для поддержания костной здоровья.\r\nВажно отметить, что усвоение кальция и рост костной ткани происходят в молодом возрасте, поэтому важно включать витамин D и физическую активность в режим детей и подростков. Это поможет им достичь максимальной костной массы и укрепить кости на будущее.\r\n\r\nВ заключение, усвоение кальция, его использование организмом и поддержание здоровья костей требуют сочетания витамина D и двигательной активности. Регулярные физические упражнения способствуют укреплению костей, а витамин D обеспечивает эффективное усвоение кальция. Сочетание этих трех факторов является ключевым для поддержания костной здоровья на протяжении всей жизни.",
+    "date": "2023-09-17T20:42:15.878Z",
+    "category": 1,
+    "author": 2,
+    "image": "vitaminDfin_AJRURX0.png",
+    "is_published": true,
+    "tags": [
+      11,
+      12
+    ]
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 17,
+  "fields": {
+    "name": "Юмор от Ломоносова Михаила Васильевича",
+    "slug": "lomonosov",
+    "text": "*  *  *\r\nОднажды один вельможа указал Михайле Ломоносову на дырку в его кафтане, вопросив с издёвкой: \"Что это у вас, уважаемый академик, ум из кафтана выглядывает?\" \"Нет, - отвечал Ломоносов, - это глупость туда заглядывает\". \r\nС ним шутить было накладно. Он везде был тот же: дома, где его все трепетали; во дворце, где он дирал за уши пажей; в Академии, где, по свидетельству Шлецера, не смели при нём пикнуть. Вместе с тем Ломоносов был добродушен...\r\n\r\n*  *  *\r\nКогда Михайло Васильевич Ломоносов взялся разбирать коллекцию минералов для Академии наук, он смог легко определить все камни хранящиеся там, кроме одного. На вопрос Ломоносова о происхождении камня, секретарь академии ответил, что это – самый драгоценный минерал в коллекции, ибо его предоставил лично польский король Ян Собесский... это – камень из почки короля!\r\n \r\n*  *  *\r\nЛетом 1753 года в петербургских газетах было помещено объявление М.В. Ломоносова. В нем обещалась награда в \"сто червонных\" тому, кто объяснит \"подлинную электрической силы причину и составит точную ее теорию\".\r\nПо имеющимся данным, премия до сих пор осталась невостребованной.\r\n \r\n*  *  * \r\nКак-то раз, оказавшись в кругу петербургских академиков, среди которых находился и М.В.Ломоносов, молодой и хвастливый князь Иван Курагин решил напомнить, что и он 'величина':\r\n- А вот я Рюрикович! Мое генеалогическое древо уходит корнями во к Владимиру Красное Солнышко. Кто еще здесь может зайчить такое о себе? Вот ты, Михайло сын Васильев, способен что-нибудь подобное сказать о своих предках?\r\n- Увы, нет, - с грустью отвечал великий русский ученый. - Дело в том, что все метрические записи нашего рода пропали во время всемирного потопа.",
+    "date": "2023-09-17T20:48:46.532Z",
+    "category": 6,
+    "author": 1,
+    "image": "lomonosovаfin_NdgLX83.png",
+    "is_published": true,
+    "tags": [
+      13,
+      14
+    ]
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 19,
+  "fields": {
+    "name": "новая в форме",
+    "slug": "new_in_form",
+    "text": "текст тут",
+    "date": "2023-11-05T19:23:24.544Z",
+    "category": 1,
+    "author": 1,
+    "image": "Снимок_экрана_от_2023-10-26_23-17-21.png",
+    "is_published": false,
+    "tags": []
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 20,
+  "fields": {
+    "name": "новая в форме 1",
+    "slug": "new_in_form_1",
+    "text": "текст тут",
+    "date": "2023-11-05T19:29:15.490Z",
+    "category": 2,
+    "author": 1,
+    "image": "photo_2023-08-18_14-31-22.jpg",
+    "is_published": false,
+    "tags": []
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 21,
+  "fields": {
+    "name": "hello",
+    "slug": "hello",
+    "text": "text",
+    "date": "2023-11-05T20:21:35.373Z",
+    "category": 3,
+    "author": 1,
+    "image": "photo_2023-08-18_14-31-22_5TeBU7T.jpg",
+    "is_published": false,
+    "tags": []
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 22,
+  "fields": {
+    "name": "Загадки Сталинских высоток в Москве",
+    "slug": "stalinskie_visotki",
+    "text": "Текс",
+    "date": "2023-11-05T22:55:38.570Z",
+    "category": 5,
+    "author": 1,
+    "image": "stalinskie-vysotki.jpg",
+    "is_published": false,
+    "tags": [
+      8
+    ]
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 23,
+  "fields": {
+    "name": "планета Z",
+    "slug": "planeta_z",
+    "text": "text",
+    "date": "2023-11-06T11:21:35.878Z",
+    "category": 2,
+    "author": 1,
+    "image": "photo_2023-08-18_14-31-22_bhDojFc.jpg",
+    "is_published": false,
+    "tags": []
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 24,
+  "fields": {
+    "name": "Загадки Z",
+    "slug": "zagadki_z",
+    "text": "text",
+    "date": "2023-11-06T11:23:43.635Z",
+    "category": 2,
+    "author": 1,
+    "image": "photo_2023-08-18_14-31-22_IiVao8E.jpg",
+    "is_published": false,
+    "tags": [
+      10
+    ]
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 25,
+  "fields": {
+    "name": "New Post",
+    "slug": "new_post",
+    "text": "post",
+    "date": "2023-11-06T20:19:45.645Z",
+    "category": 1,
+    "author": 1,
+    "image": "",
+    "is_published": false,
+    "tags": [
+      11,
+      16
+    ]
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 26,
+  "fields": {
+    "name": "новый пост еще",
+    "slug": "novyj-post-eshe",
+    "text": "тпаееру",
+    "date": "2023-11-08T17:56:34.818Z",
+    "category": 1,
+    "author": 1,
+    "image": "",
+    "is_published": false,
+    "tags": []
+  }
+},
+{
+  "model": "publications.post",
+  "pk": 28,
+  "fields": {
+    "name": "Попытка 3",
+    "slug": "popytka-3",
+    "text": "аппар",
+    "date": "2023-11-08T18:02:32.203Z",
+    "category": 1,
+    "author": 1,
+    "image": "",
+    "is_published": true,
+    "tags": []
+  }
+}
+]
