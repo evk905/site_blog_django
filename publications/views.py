@@ -34,8 +34,8 @@ def post_new(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
-            name = form.cleaned_data.get('name')
-            post.slug = slugify(name)
+            # name = form.cleaned_data.get('name')
+            # post.slug = slugify(name)
             post.save()
             form.save_m2m()
 
